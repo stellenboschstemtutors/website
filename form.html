@@ -18,18 +18,19 @@
 	</header>
 	<main class="flex-center-elements">
 		<div class="form-intro-div">
-			<p>No setting up accounts - no wasting time. <br> Simply fill in your details and we will get back to you ASAP!</p>
+			<p>No setting up accounts - no wasting time.</p>
+			<p>Simply fill in your details and we will get back to you ASAP!</p>
 		</div>
 		<div class="form-fill-div">
-			<form>
+			<form action="https://formspree.io/f/xreykdql" method="POST">
 				<input type="text" placeholder="Name" name="name" required>
 				<input type="email" placeholder="Email address" name="email" required>
-		    		<input type="text" placeholder="Module" name="module">
+		    		<input type="text" placeholder="Module (e.g. AM124)" name="module">
 		    		<fieldset>
 			    		<legend>I prefer:</legend>
-					<input class="checkbox" type="radio" name="teaching-method" required>
+					<input class="checkbox" type="radio" name="teaching-method" value="in-person" required>
 					<label>In-person</label>
-					<input class="checkbox" type="radio" name="teaching-method">
+					<input class="checkbox" type="radio" name="teaching-method" value="online">
 					<label>Online</label>
 				</fieldset>
 		    		<button class="submit" type="submit">Find tutor...</button>
