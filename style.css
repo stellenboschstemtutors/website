@@ -1,0 +1,216 @@
+/*----------------------Body and Universals----------------------*/
+body{
+	margin-top: 100px;
+	background-color: #f8f5eb;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+h2{
+	margin: 0;
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 36px;
+	font-weight: 400;  
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
+p{
+	margin: 0;
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: 100;  
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
+ol{
+	list-style: none;
+	counter-reset: item;
+}
+
+li{
+    	counter-increment: item;
+    	margin-bottom: 12px;
+    	position: relative;
+    	padding-left: 30px;
+    	font-size: 28px;
+    	font-family: 'Source Sans 3', sans-serif;
+}
+
+li::before {
+    	content: counter(item);
+    	position: absolute;
+    	left: -10px;
+    	top: 2px;
+    	background: #7A0019;
+    	color: white;
+    	width: 36px;
+    	height: 36px;
+    	border-radius: 50%;
+    	text-align: center;
+    	line-height: 36px;
+}
+.flex-center-elements{
+	display: flex;
+	flex-direction: columns;
+	align-items: center;
+}
+/*----------------------Heading----------------------*/
+header{
+	/*border-bottom: 1px solid black;*/
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+	background-color: #7A0019;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	z-index: 10;
+	   
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	align-items: center;
+}
+#link-box{
+	padding-right: 70px;
+	justify-self: end;
+}
+#title-box{
+	text-align: center;
+	white-space: nowrap;
+}
+.heading-text-anchor{
+	font-size: 20px;
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 48px;
+	font-weight: 100;  
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
+/*----------------------Main----------------------*/
+main{
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+}
+.generic-button-anchor{
+	height: 35px;
+	width: 25%;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 7px;
+	color: white;
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 1.5rem;
+	background-color: #7A0019;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hero-div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2.5rem;
+}
+.hero-div p{
+	font-size: 28px;
+	text-align: center;
+	width: 80%;
+}
+.trust-card-div{
+	width: 80vw;
+}
+.trust-card-div p{
+	font-size: 28px;
+}
+/*----------------------Footer----------------------*/
+footer{
+	margin-top: 30px;
+	border-top: 1px solid rgba(0,0,0,0.05);
+	background-color: #f1ead9; /*	#f1ead9,#e4dcc6,#ebe3cf,*/
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+.footer-info-div{
+	width: 20vw;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer-info-div p{
+	font-size: 14px;
+	text-align: center;
+}
+/*----------------------Form----------------------*/
+.form-intro-div p{
+	font-size: 28px;
+}
+
+.form-fill-div form{
+	width: 70vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+.form-fill-div input{
+	width: 100%;
+	font-size: 20px;
+	height: 40px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 7px;
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 0.95rem;
+	background-color: #f8f5eb;
+	accent-color: #7A0019;
+}
+.form-fill-div input:focus{
+	border: 1px solid rgba(0,0,0,0.8);
+	background-color: #f1ead9; 
+	outline: none;
+}
+.form-fill-div fieldset{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	margin-top: 2rem;
+	display: grid;
+	gap: 30px;
+	box-sizing: border-box;
+}
+.form-fill-div legend{
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 28px;
+	font-weight: 100;  
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
+.form-fill-div label{
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: 100;  
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	font-size: 0.95rem;
+}
+	
+.form-fill-div button{
+	width: 25vw;
+	height: 35px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 7px;
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 1.5rem;
+	color: white;
+	background-color: #7A0019;
+}
+.form-fill-div button:focus{
+	border: 1px solid rgba(0,0,0,0.8);
+	background-color: #7A0019; 
+	outline: none;
+}
+/*---Ex---pe---ri---me---nt---al---*/
+
+
