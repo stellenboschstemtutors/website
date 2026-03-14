@@ -49,14 +49,14 @@ li::before {
     	text-align: center;
     	line-height: 64px;
 }
-.flex-center-elements{
-	display: flex;
-	flex-direction: columns;
-	align-items: center;
-}
 .emph-paragraph{
 	color: #7A0019;
 	font-weight: 400;
+}
+.center-align{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 /*----------------------Heading----------------------*/
 header{
@@ -242,6 +242,65 @@ footer{
 	border: 1px solid rgba(0,0,0,0.8);
 	background-color: #7A0019; 
 	outline: none;
+}
+/*----------------------Profile----------------------*/
+.profile-intro-div{
+	margin-top: 50px;
+}
+.profile-intro-div p{
+	font-size: 3.5rem;
+	text-align: center;
+}
+.profile-div{
+	background-color: #f1ead9;
+	border-radius: 80px;
+	margin-top: 50px;
+	width: 90vw;
+}
+.img-div{
+	position: relative;
+	width: 90%;
+	margin-top: 5%;
+}
+.img-div img{
+	width: 100%;
+	border-radius: 50px;
+}
+.img-div h2{
+	position: absolute;
+	top: 2%;
+	left: 5%;
+	font-size: 6rem;
+	color: #7A0019;
+}
+.description-div{
+	width: 80%;
+	margin-top: 30px;
+}
+.description-div p{
+	font-size: 2.5rem;
+}
+.details-div{
+	margin-top: 20px;
+	margin-bottom: 5%;
+}
+.details-div p{
+	font-size: 2rem;
+	line-height: 1.2;
+}
+.profile-accept-div{
+	margin-top: 50px;
+	width: 80vw;
+}
+.profile-accept-div p{
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.accept-button-anchor{
+	width: 30vw;
+	height: 80px;
+	font-size: 2.5rem;
 }
 /*---Ex---pe---ri---me---nt---al---*/
 
